@@ -4,32 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Home</title>
+    <title>Login Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="centro">
         <div class="box-center">
-            <form method="post" action="php/visualsistema.php">
-                <h1 class="titulo">CADASTRO</h1>
-                <p>Nome Completo<a class="aster">*</a></p>
-                <input type="text" name="nome" class="name" />
-                <p>CPF<a class="aster">*</a></p>
-                <input type="text" name="cpf" class="cpf" id="cpf" maxlength="14" />
+            <form id="loginForm">
+                <h1 class="titulo">LOGIN</h1>
                 <p>Email<a class="aster">*</a></p>
-                <input type="email" name="email" class="email" />
+                <input type="email" class="email" required />
                 <p>Senha<a class="aster">*</a></p>
-                <input type="password" name="password" class="senha" />
+                <input type="password" class="senha" required />
                 <p class="resultado"></p>
-                <p class="tem">Tem login? <a class="click" href="login.php">Clique aqui</a></p>
-                <input type="submit" value="CADASTRE-SE" class="cadastro">
+                <input type="submit" value="LOGIN" class="cadastro">
             </form>
         </div>
     </div>
     <script src="js/jquery/jquery-3.7.1.min.js"></script>
-    <script src="js/verifica.js"></script>
-    <script src="js/formatacao.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
